@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
+import FormGroup from '../FormGroup/FormGroup';
 
 class LoginForm extends Component {
+
   render() {
     return (
-      <div class="container col-sm-6">
+      <div className="container col-sm-6">
         <form>
-          <div className="form-group">
-            <label for="login">Login</label>
-            <input type="text" className="form-control" id="login" placeholder="Enter your login" />
-          </div>
-          <div className="form-group">
-            <label for="password">Email</label>
-            <input type="password" className="form-control" id="password" placeholder="Enter your password" />
-          </div>
+          <FormGroup for="login" type="text" id="login" placeholder="Enter your login" name="Login" />
+          <FormGroup for="password" type="password" id="password" placeholder="Enter your password" name="Email" />
           <button type="submit" className="btn btn-primary">Submit</button>
         </form>
       </div>
